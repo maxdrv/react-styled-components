@@ -1,11 +1,12 @@
 import React from 'react';
 import {Container} from "./styled/Container.styled";
 import {Flex} from "./styled/Flex";
+import {FooterStyled} from "./styled/Footer.styled";
 
 const Footer = (props) => {
 
     return (
-        <div>
+        <FooterStyled>
             <Container>
                 <img src="./images/logo_white.svg" alt=""/>
 
@@ -34,9 +35,9 @@ const Footer = (props) => {
 
                 </Flex>
 
-                <p>&copy: 2021 Huddle. All rights reserved</p>
+                <p>&copy; 2021 Huddle. All rights reserved</p>
             </Container>
-        </div>
+        </FooterStyled>
     )
 }
 
