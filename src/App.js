@@ -2,6 +2,7 @@ import {ThemeProvider} from "styled-components";
 import {Container} from "./components/styled/Container.styled";
 import Header from "./components/Header";
 import GlobalStyles from "./components/styled/Global";
+import content from "./content";
 
 const theme = {
     colors: {
@@ -19,7 +20,11 @@ function App() {
               <GlobalStyles/>
               <Header/>
               <Container>
-                  <h1>Hello world</h1>
+                  {
+                      content.map((item, index) =>
+                          <Card key={index} item={item}/>
+                      )
+                  }
               </Container>
           </>
       </ThemeProvider>
