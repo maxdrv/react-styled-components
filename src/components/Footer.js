@@ -2,6 +2,7 @@ import React from 'react';
 import {Container} from "./styled/Container.styled";
 import {Flex} from "./styled/Flex";
 import {FooterStyled} from "./styled/Footer.styled";
+import SocialIcons from "./SocialIcons";
 
 const Footer = (props) => {
 
@@ -31,7 +32,7 @@ const Footer = (props) => {
                         <li>Contact Us</li>
                     </ul>
 
-                    {/*social icons*/}
+                    <SocialIcons/>
 
                 </Flex>
 
