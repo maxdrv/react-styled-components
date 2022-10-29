@@ -3,6 +3,8 @@ import {Container} from "./components/styled/Container.styled";
 import Header from "./components/Header";
 import GlobalStyles from "./components/styled/Global";
 import content from "./content";
+import Footer from "./components/Footer";
+import Card from "./components/Card";
 
 const theme = {
     colors: {
@@ -26,6 +28,7 @@ function App() {
                       )
                   }
               </Container>
+              <Footer/>
           </>
       </ThemeProvider>
   );
